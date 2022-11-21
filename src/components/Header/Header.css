@@ -9,7 +9,9 @@ body{
     margin: 0px auto;
 }
 #header{
-    background-color: darkslategray ;
+    /* background-color: darkslategray ; */
+    background-color: #dc3545;
+
 }
 nav{
         display: flex;

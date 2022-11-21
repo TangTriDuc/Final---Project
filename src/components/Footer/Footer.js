@@ -8,7 +8,7 @@ function Footer() {
         <div className="row">
           {/* Column1 */}
           <div className="col">
-            <h4>ĐỊA CHỈ</h4>
+            <h4>ĐỊA CHỈ:</h4>
             <h1 className="list-unstyled">
               <li>123 Nơ Trang Long</li>
               <li>HotLine: 0782144758 </li>

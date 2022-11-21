@@ -35,7 +35,7 @@ function Home () {
                     
                     </div>                  
                 <div class="product-info">
-                    <a href="/#" class="product-cat">Ngôn Tình</a>
+                    <a href="/#" class="product-cat">Văn Học - Ngôn Tình</a>
                     <a href="/#" class="prodcut-name">All In Love - Ngập Tràn Yêu Thương (Tái Bản 2020) </a>
                     <div class="product-price">119.000 VNĐ</div>
                 </div>
