@@ -1,0 +1,143 @@
+
+body{
+    background-size: cover;
+    background-position-y: -100px;
+}
+/* class cho container */
+.container{
+    max-width: 1600px;
+    margin: 0px auto;
+}
+#header{
+    background-color: darkslategray ;
+}
+nav{
+        display: flex;
+    /* NAM HAI PHIA   DAY RA 2 PHIA 2 DAU */
+        justify-content: space-evenly;
+        justify-items: center;
+}
+#logo {
+    padding: 5px 0px;
+}
+#logo img{
+    max-width: 50px;
+    height: auto;
+}
+
+#main-menu{
+    /* muon li o ben trong xuat hien tren 1 hang */
+    /* display: flex; */
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-menu  li{
+    position: relative;
+}
+
+ /*li: list */
+ /*main-menu chinh*/
+#main-menu li a{
+    color: white;
+    display: block;
+    /* padding: 18px (tren duoi) 20px(trai phai); */
+    padding: 18px 20px;
+
+    text-decoration:none;
+}
+
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: darkslategrey;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border-bottom: 1px solid #958f8f;
+    display: none;
+}
+
+/* khi di chuot vao thi sub-menu moi hien va khi them > thi no chi tac dong nhung gi cua chuot*/
+#main-menu li:hover > ul.sub-menu {
+    display: block;
+}
+
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    /* solid: mau */
+    /* cho dung vien den mo */
+    border-bottom: 1px solid #958f8f;
+    left: 0;
+}
+
+/* Di chuyen vao thi no se sang mau len va > a thi se ap dung het*/
+#main-menu ul.sub-menu li:hover > a{
+    border-bottom: 1px solid #5c5c55;
+}
+
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+
+
+/* #main-menu ul.sub-menu (cap 2) ul.sub-menu (cap 3) */
+#main-menu ul.sub-menu ul.sub-menu{
+    left: 200px;
+    top: -15px;
+}
+
+/* Thiet lap border khi hover */
+#main-menu>li>a{
+    position: relative;
+}
+
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    /* chinh toc do hien khi tro chuot vao */
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu>li:hover>a::before{
+    width: 100%;
+}
+
+#main-menu>li.has-child::after {
+/* Tao mui ten */
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f107";
+    color: #b5aeae;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 18px 0px;
+}
+
+/* Di chuyen chuot vao hien thanh do */
+#main-menu .sub-menu li:hover > a{
+    color: crimson;
+}
+/* Tao mui ten cho tat ca */
+#main-menu .sub-menu>li.has-child::after{
+    
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f105";
+    color: #b5aeae;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 6px 0px;
+}
+
+#main-menu .sub-menu>li:hover.has-child:hover::after{
+    color: crimson;
+}
